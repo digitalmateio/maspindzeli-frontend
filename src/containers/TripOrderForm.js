@@ -5,10 +5,6 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 class TripOrderForm extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   tripStartClick = () => {
     this.props.setTripStart(() => {
       this.props.history.push('/Signup');
@@ -36,9 +32,7 @@ function mapStateToProps(state) {
   };
 }
 
-const TripOrderFormExport = withRouter(TripOrderForm);
-
 export default connect(
   mapStateToProps,
   actions,
-)(TripOrderFormExport);
+)(withRouter(TripOrderForm));

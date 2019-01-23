@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import * as actions from '../actions/trip-start-action';
 import TripStart from '../components/TripStart';
 import TripOrderForm from './TripOrderForm';
+import About from '../components/About';
 import PropTypes from 'prop-types';
 
 class Landing extends Component {
@@ -10,6 +11,11 @@ class Landing extends Component {
     return (
       <div className="landing--container">
         <TripStart />
+        <About />
+        <About />
+        <About />
+        <About />
+        <About />
       </div>
     );
   }
