@@ -1,38 +1,25 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import * as actions from "../actions/trip-start-action";
-
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from '../actions/trip-start-action';
+import TripStart from '../components/TripStart';
+import TripOrderForm from './TripOrderForm';
+import PropTypes from 'prop-types';
 
 class Landing extends Component {
-  tripStartClick = () => {
-    this.props.setTripStart(() => {
-      this.props.history.push("/Signup");
-    });
-  };
-
   render() {
     return (
-      <div>
-        <button onClick={this.tripStartClick.bind(this)} />
-        TEST LANDING
+      <div className="landing--container">
+        <TripStart />
       </div>
     );
   }
 }
 
 Landing.propTypes = {
-  setTripStart: PropTypes.func.isRequired
+  setTripStart: PropTypes.func.isRequired,
 };
 
-function mapStateToProps(state) {
-  return {
-    tripStart: state.tripStart,
-    errors: state.errors.errorsObject
-  };
-}
-
 export default connect(
-  mapStateToProps,
-  actions
+  null,
+  actions,
 )(Landing);

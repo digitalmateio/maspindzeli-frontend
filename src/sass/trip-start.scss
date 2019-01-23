@@ -1,0 +1,9 @@
+@import 'variables';
+
+.trip-start {
+  &--container {
+    background-color: orange;
+    height: 70%;
+    border: 0.2em solid black;
+  }
+}
