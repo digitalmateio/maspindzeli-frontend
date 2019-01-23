@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions/trip-start-action';
-import TripStart from '../components/TripStart';
+import TripStart from '../components/LandingComponents/TripStart';
 import TripOrderForm from './TripOrderForm';
-import About from '../components/About';
+import About from '../components/LandingComponents/About';
+import Maspindzelis from '../components/LandingComponents/Maspindzelis';
 import PropTypes from 'prop-types';
 
 class Landing extends Component {
@@ -12,7 +13,7 @@ class Landing extends Component {
       <div className="landing--container">
         <TripStart />
         <About />
-        <About />
+        <Maspindzelis />
         <About />
         <About />
         <About />

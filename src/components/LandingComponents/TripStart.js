@@ -1,5 +1,5 @@
 import React from 'react';
-import TripOrderForm from '../containers/TripOrderForm';
+import TripOrderForm from '../../containers/TripOrderForm';
 import Header from './Header';
 
 const TripStart = () => {
