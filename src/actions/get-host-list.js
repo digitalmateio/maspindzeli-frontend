@@ -2,16 +2,11 @@ import { GET_HOSTS } from './types';
 import Api from '../services/Api';
 
 import React from 'react';
-import axios from 'axios';
 
-export const getHosts = callback => async dispatch => {
+export const callHostList = () => async dispatch => {
   try {
-    // let res = axios.get(Api);
-    // console.log(res);
-    // localStorage.setItem('tripStart', true);
-    dispatch({ type: TRIP_START, payload: true });
-    // callback for route redirect
-    callback();
+    let res = await Api().get();
+    dispatch({ type: GET_HOSTS, payload: res.data.images });
   } catch (e) {
     console.log(e);
   }

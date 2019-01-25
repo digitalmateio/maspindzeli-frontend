@@ -14,9 +14,6 @@ class Landing extends Component {
         <TripStart />
         <About />
         <Maspindzelis />
-        <About />
-        <About />
-        <About />
       </div>
     );
   }

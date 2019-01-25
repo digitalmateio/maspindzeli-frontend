@@ -1,7 +1,8 @@
 import React from 'react';
+import MaspindzeliList from '../../containers/lists/MaspindzeliList';
 const Maspindzelis = () => {
   return (
-    <div className="landing--container--card">
+    <div className="maspindzelis">
       <div className="maspindzelis--title-container">
         <div className="maspindzelis--title-container--title">
           Our Maspindzelis
@@ -9,6 +10,9 @@ const Maspindzelis = () => {
         <div className="maspindzelis--title-container--description">
           description
         </div>
+      </div>
+      <div className="maspindzelis--host-container">
+        <MaspindzeliList />
       </div>
     </div>
   );
