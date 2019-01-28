@@ -3,6 +3,7 @@ import authReducer from './auth-reducer';
 import errorsReducer from './errors-reducer';
 import tripStartReducer from './trip-start-reducer';
 import hostListReducer from './host-list-reducer';
+import hostSliderReducer from './host-slider-reducer';
 import { reducer as formReducer } from 'redux-form';
 
 export default combineReducers({
@@ -11,4 +12,5 @@ export default combineReducers({
   errors: errorsReducer,
   setTripStart: tripStartReducer,
   hosts: hostListReducer,
+  slideState: hostSliderReducer,
 });

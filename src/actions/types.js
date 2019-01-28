@@ -4,3 +4,6 @@ export const LOGOUT_USER = 'logout_user';
 export const GET_ERRORS = 'get_errors';
 export const TRIP_START = 'trip_start';
 export const GET_HOSTS = 'get_hosts';
+export const PREV_SLIDE = 'prev_slide';
+export const NEXT_SLIDE = 'next_slide';
+export const RESET_SLIDE = 'reset_slide';
