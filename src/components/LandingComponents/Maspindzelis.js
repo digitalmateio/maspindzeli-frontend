@@ -7,13 +7,6 @@ import LeftSlideArrow from '../SlideComponents/LeftSlideArrow';
 import RightSlideArrow from '../SlideComponents/RightSlideArrow';
 
 class Maspindzelis extends Component {
-  LeftSlideArrow = () => {
-    return <button>next arrow icon</button>;
-  };
-  RightSlideArrow = () => {
-    return <button>next arrow icon</button>;
-  };
-
   backClickHandler = () => {
     return this.props.goToPrevSlide(
       this.props.currentIndex,
@@ -39,7 +32,6 @@ class Maspindzelis extends Component {
   }
 
   render() {
-    console.log(this.props.listLength);
     return (
       <div className="maspindzelis">
         <div className="maspindzelis--title-container">
@@ -64,21 +56,6 @@ class Maspindzelis extends Component {
   }
 }
 
-// <LeftSlideArrow
-// className="maspindzelis--host-container--arrows-left"
-// onClick={this.backClickHandler.bind(this)}
-// />
-// <RightSlideArrow
-// className="maspindzelis--host-container--arrows"
-// onClick={this.nextClickHandler.bind(this)}
-// />
-
-// Maspindzelis.propTypes = {
-//   slideState: PropTypes.obj.isRequired,
-//   goToNextSlide: Proptypes.func.isRequired,
-//   goToPrevSlide: Proptypes.func.isRequired,
-// };
-
 function mapStateToProps(state) {
   return {
     currentIndex: state.slideState.currentIndex,
@@ -87,7 +64,6 @@ function mapStateToProps(state) {
   };
 }
 
-// export default Maspindzelis;
 export default connect(
   mapStateToProps,
   actions,

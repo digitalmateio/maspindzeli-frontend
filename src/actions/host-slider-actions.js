@@ -8,7 +8,7 @@ export const goToNextSlide = (
 ) => async dispatch => {
   try {
     if (currentIndex === listLength - 1) {
-      dispatch({
+      return dispatch({
         type: RESET_SLIDE,
         payload: { currentIndex: 0, translateValue: 0 },
       });

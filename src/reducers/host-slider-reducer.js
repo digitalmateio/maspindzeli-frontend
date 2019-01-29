@@ -3,6 +3,7 @@ import { PREV_SLIDE, NEXT_SLIDE, RESET_SLIDE } from '../actions/types';
 const INITIAL_STATE = {
   currentIndex: 0,
   itemLength: null,
+  translateValue: 0,
 };
 
 export default function(state = INITIAL_STATE, action) {

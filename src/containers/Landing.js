@@ -19,9 +19,9 @@ class Landing extends Component {
   }
 }
 
-Landing.propTypes = {
-  setTripStart: PropTypes.func.isRequired,
-};
+// Landing.propTypes = {
+//   setTripStart: PropTypes.func.isRequired,
+// };
 
 export default connect(
   null,
